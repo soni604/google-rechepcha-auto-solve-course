@@ -1,0 +1,16 @@
+title: google rechepcha auto solve
+description: pls help
+template:
+  repo: google-rechepcha-auto-solve-template
+  name: google-rechepcha-auto-solve
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
